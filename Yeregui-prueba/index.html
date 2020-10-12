@@ -3,29 +3,34 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" src="background.js"></script>
         <style>
 body {
 background-color: #000000;
 }
 
 #title-text {
-        display:flex;
-justify-content:center;
-color:blanchedalmond;
+position: absolute;
+width: 325px;
+height: 45px;
+left: 530px;
+top: 118px;
 font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 50.0724px;
 line-height: 66px;
 text-align: center;
+color: #FFF7F7;
 }
 
 #interactive-text {
-        display:flex;
-justify-content:center;
-color:blanchedalmond;
-font-family: 'Montserrat', sans-serif;
+position: absolute;
+color:#000000;
+width: 286px;
+height: 50px;
+left: 550px;
+top: 312px;
 font-family: Roboto Mono;
 font-style: normal;
 font-weight: normal;
@@ -34,7 +39,6 @@ line-height: 47px;
 text-align: center;
 animation-name: heartbeat;
 animation-duration: 20s;
-margin-top: -50px;
 }
 
 #footer{
@@ -42,6 +46,7 @@ position: fixed;
 bottom: 0px;
 left: 0px;
 right: 0px;
+width: 1365px;
 height: 58.86px;
 background: rgba(196, 196, 196, 0.5);
 }
@@ -56,6 +61,8 @@ font-weight: normal;
 font-size: 20.8802px;
 line-height: 28px;
 padding-top: 10px;
+padding-left: 30px;
+padding-right:30px;
 color: #000000;
 }
 
@@ -133,28 +140,32 @@ color: #000000;
   }
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
 
 </style>
     </head>
 
     <body>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <div id="canvas">
 <p id="title-text">YEREGUI INTERACTIVA</p>
 <div id="container-1"></div>
 <div id="footer">
     <div id="were">
-    <br>
     <a>¿Quiénes somos?</a>
     <a>Repositorio</a>
     <a>¿Easter egg?</a>
-    <br>
 </div>
 </div>
 <div id="interactive-text"><a href="yeregui-interactiva.html" class="heartbeat"> ¿Comenzamos?</a></div>
