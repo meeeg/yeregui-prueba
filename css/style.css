@@ -1,6 +1,6 @@
 body {
     background-color: #000000;
-    background-image: url('img/tuercas.gif'), linear-gradient(#eb01a5, #d13531);
+    background-image: url('img/tuercas.gif')
         background-size: cover;
         height: 100vh;
         padding:0;
