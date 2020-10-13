@@ -94,7 +94,7 @@ display:flex;
     left: 0px;
     right: 0px;
     height: 45.86px;
-    background:hsla(0, 0%, 100%, 0.87)
+    background: rgba(196, 196, 196, 0.5);
     }
     
     #were{
@@ -204,7 +204,7 @@ display:flex;
     }
 
     a {
-            color: red;
+            color: hsla(0, 0%, 85%, 1);
             font-style:bold;
             font-weight: 900;
     }
