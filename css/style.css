@@ -1,22 +1,13 @@
 body {
     background-color: #000000;
-    }
-#option-container {
-    width: 184.12px;
-    height: 324.49px;
-    left: 302px;
-    background: rgba(196, 196, 196, 0.5);
-    border-radius: 32.645px;
-      margin: 8px;
+    background-image: url('img/tuercas.gif'), linear-gradient(#eb01a5, #d13531);
+        background-size: cover;
+        height: 100vh;
+        padding:0;
+        margin:0;
     }
     
-.center-row{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        }
-    
-#title-text{
+     #title-text{
         display:flex;
         justify-content:center;
         color:blanchedalmond;
@@ -24,23 +15,38 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 50.0724px;
-    line-height: 66px;
     text-align: center;
     color: #FFF7F7;
-    }
-
-#subtitle-text{
-        display:flex;
-        justify-content:center;
-        color:blanchedalmond;
-        font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-style:italic;
-    text-align: center;
-    color: #FFF7F7;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     
-#a-aligned-center{
+    #back-to-start{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color:blanchedalmond;
+        flex-direction: flex-end;
+        font-family: 'Montserrat', sans-serif;
+        padding-right: 20px;
+    }
+    
+    .center-row{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap:wrap;
+        }
+    
+        #option-container {
+    width: 184.12px;
+    height: 324.49px;
+    left: 302px;
+    background: rgba(196, 196, 196, 1);
+    border-radius: 32.645px;
+      margin: 8px;
+    }
+    
+    #a-aligned-center{
     display:flex;
     justify-content:center;
     color:blanchedalmond;
@@ -52,12 +58,156 @@ body {
     color: #000000;
     }
     
-#back-to-start{
+    #subtitle-text{
+display:flex;
+            justify-content:center;
+            color:blanchedalmond;
+            font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-style:italic;
+        text-align: center;
+        color: #FFF7F7;
+        margin-top: -50px;
+        }
+
+    
+    #interactive-text {
+            display:flex;
+    justify-content:center;
+    color:blanchedalmond;
+    font-family: 'Montserrat', sans-serif;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    animation-name: heartbeat;
+    animation-duration: 20s;
+    margin-top: -50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    #footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 58.86px;
+    background: rgba(196, 196, 196, 0.5);
+    }
+    
+    #were{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20.8802px;
+    line-height: 28px;
+    padding-top: 10px;
+    color: #000000;
+    flex-wrap: wrap;
+    }
+    
+    .heartbeat:hover {
+        -webkit-animation: heartbeat 20s linear infinite both;
+                animation: heartbeat 20s linear infinite both;
+    }
+    
+    @-webkit-keyframes heartbeat {
+      from {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+      10% {
+        -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      17% {
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+      33% {
+        -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      45% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+    }
+    @keyframes heartbeat {
+      from {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+      10% {
+        -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      17% {
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+      33% {
+        -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      45% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+    }
+    
+    .wrapper {
+        margin-right: auto;
+        margin-left:  auto;
+    
+        max-width: 960px;
+        background:hsla(0, 0%, 0%, 0.73);
+      
+        border-radius: 32.645px;
+      }
+    
+    
+      #back-to-page{
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
+        justify-content: flex-start;
+        align-items: flex-start;
         color:blanchedalmond;
-        flex-direction: flex-end;
+        flex-direction: flex-start;
         font-family: 'Montserrat', sans-serif;
         padding-right: 20px;
+    }
+
+    a {
+            color: red;
+            font-style:bold;
+            font-weight: 900;
     }

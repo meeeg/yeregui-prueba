@@ -4,145 +4,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, user-scalable=no">
-        <style>
-body {
-background-color: #000000;
-background-image: url('https://media3.giphy.com/media/l0K490IFKUUo0ysM0/giphy.gif?cid=ecf05e472hxxz8j7v6kknzu5ht9l6qm5te5udcmy5f4naez1&rid=giphy.gif');
-    background-size: cover;
-    height: 100vh;
-    padding:0;
-    margin:0;
-}
-
-#title-text {
-        display:flex;
-justify-content:center;
-color:blanchedalmond;
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 50.0724px;
-line-height: 66px;
-text-align: center;
-}
-
-#interactive-text {
-        display:flex;
-justify-content:center;
-color:blanchedalmond;
-font-family: 'Montserrat', sans-serif;
-font-family: Roboto Mono;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 47px;
-text-align: center;
-animation-name: heartbeat;
-animation-duration: 20s;
-margin-top: -50px;
-}
-
-#footer{
-position: fixed;
-bottom: 0px;
-left: 0px;
-right: 0px;
-height: 58.86px;
-background: rgba(196, 196, 196, 0.5);
-}
-
-#were{
-display:flex;
-flex-direction: row;
-justify-content: space-evenly;
-font-family: Roboto Mono;
-font-style: normal;
-font-weight: normal;
-font-size: 20.8802px;
-line-height: 28px;
-padding-top: 10px;
-color: #000000;
-flex-wrap: wrap;
-}
-
-.heartbeat:hover {
-	-webkit-animation: heartbeat 20s linear infinite both;
-	        animation: heartbeat 20s linear infinite both;
-}
-
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-@keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-
-
-
-
-</style>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
             <br>
@@ -153,8 +15,11 @@ flex-wrap: wrap;
             <br>
             <br>
             <br>
-<p id="title-text">YEREGUI INTERACTIVA</p>
-<div id="container-1"></div>
+            <br>
+            <div class="wrapper">
+<p id="title-text" class="center-row">ABRIENDO LA CAJA NEGRA</p>
+<a id="interactive-text" class="center-row" href="yeregui-interactiva.html" class="heartbeat"> ¿Comenzamos?</a></div>
+            </div>
 <div id="footer">
     <div id="were">
     <br>
@@ -164,7 +29,8 @@ flex-wrap: wrap;
     <br>
 </div>
 </div>
-<div id="interactive-text"><a href="yeregui-interactiva.html" class="heartbeat"> ¿Comenzamos?</a></div>
+
+</div>
 </div>
     </body>
 </html>
