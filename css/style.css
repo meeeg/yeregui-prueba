@@ -93,8 +93,8 @@ display:flex;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    height: 58.86px;
-    background: rgba(196, 196, 196, 0.5);
+    height: 45.86px;
+    background:hsla(0, 0%, 100%, 0.87)
     }
     
     #were{
@@ -188,11 +188,8 @@ display:flex;
     .wrapper {
         margin-right: auto;
         margin-left:  auto;
-    
         max-width: 960px;
-        background:hsla(0, 0%, 0%, 0.73);
-      
-        border-radius: 32.645px;
+        background:hsla(0, 0%, 0%, 0.95);
       }
     
     
